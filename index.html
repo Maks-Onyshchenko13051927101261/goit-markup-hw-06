@@ -15,11 +15,11 @@
 </head>
 
 <body>
-    <!--================HEDER================-->
-    <header class="main-heder">
-        <div class="container heder-container">
-            <a class="menu-logo" href="./index.html">Web<span class="accent-header">Studio</span></a>
+    <!--================HEADER================-->
+    <header class="page-header">
+        <div class="container header-container">
             <nav class="page-navigation">
+                <a class="page-logo" href="./index.html">Web<span class="accent-lodo">Studio</span></a>
                 <ul class="page-menu">
                     <li class="menu-item"><a class="menu-link current-studio" href="./index.html">Studio</a></li>
                     <li class="menu-item"><a class="menu-link" href="">Portfolio</a></li>
@@ -34,8 +34,8 @@
                     </li>
                 </ul>
             </address>
-            <button class="page-menu-btn">
-                <svg class="menu-btn-icon"  width="24" height="24">
+            <button class="mobile-menu-btn">
+                <svg class="menu-btn-icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </button>
@@ -43,12 +43,12 @@
     </header>
     <!--================HERO================-->
     <main>
-        <!-- <section class="section hero-section">
+        <section class="section hero-section">
             <div class="container">
                 <h1 class="solution-info">Effective Solutions for Your Business</h1>
                 <button class="service-button" type="button">Order Service</button>
             </div>
-        </section> -->
+        </section>
         <!--================ADVANTAGES================-->
         <!-- <section class="section">
             <div class="container">
@@ -347,7 +347,7 @@
     <!-- <footer class="main-footer">
         <div class="container main-footer-container">
             <div class="footer-title-text">
-                <a class="footer-logo" href="./index.html">Web<span class="accent-footer">Studio</span></a>
+                <a class="page-logo" href="./index.html">Web<span class="accent-lodo">Studio</span></a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing
                     &
                     growth solutions.</p>
@@ -464,57 +464,65 @@
             </form>
         </div>
     </div> -->
-    <div class="container">
+    <!-- <div class="mobile-menu container">
         <div class="burger-menu">
-            <button class="close-burger-menu"></button>
+            <button class="close-btn-menu" type="button">
+                <svg class="icon-close-menu">
+                    <use href="./images/icons.svg#icon-clos-x"></use>
+                </svg>
+            </button>
             <nav class="burger-menu-nav">
                 <ul class="burger-menu-page">
-                    <li class="burger-menu-item"></li>
-                    <li class="burger-menu-item"></li>
-                    <li class="burger-menu-item"></li>
+                    <li class="burger-menu-item"><a class="burger-menu-link burger-menu-studio" href="./index.html">Studio</a></li>
+                    <li class="burger-menu-item"><a class="burger-menu-link" href="">Portfolio</a></li>
+                    <li class="burger-menu-item"><a class="burger-menu-link" href="">Contacts</a></li>
                 </ul>
             </nav>
-            <address class="burger-contacts">
-                <ul class="burger-contacts-info">
-                    <li class="burger-contacts-item"><a class="burger-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="burger-contacts-item"><a class="burger-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                    </li>
-                </ul>
-            </address>
-            <div class="burger-media">
-                <ul class="burger-icon-list">
-                    <li class="burger-icon-item">
-                        <a class="burger-icon-link" href="">
-                            <svg class="burger-icon-media" width="" height="">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="burger-icon-item">
-                        <a class="burger-icon-link" href="">
-                            <svg class="burger-icon-media" width="" height="">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="burger-icon-item">
-                        <a class="burger-icon-link" href="">
-                            <svg class="burger-icon-media" width="" height="">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="burger-icon-item">
-                        <a class="burger-icon-link" href="">
-                            <svg class="burger-icon-media" width="" height="">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="contacts-media-list">
+                <address class="burger-contacts">
+                    <ul class="burger-contacts-info">
+                        <li class="burger-contacts-item"><a class="burger-contacts-link phone-number" href="tel:+110001111111">+11 (000)
+                                111-11-11</a>
+                        </li>
+                        <li class="burger-contacts-item"><a class="burger-contacts-link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                </address>
+                <div class="burger-media">
+                    <ul class="burger-icon-list">
+                        <li class="burger-icon-item">
+                            <a class="burger-icon-link" href="">
+                                <svg class="burger-icon-media">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="burger-icon-item">
+                            <a class="burger-icon-link" href="">
+                                <svg class="burger-icon-media">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="burger-icon-item">
+                            <a class="burger-icon-link" href="">
+                                <svg class="burger-icon-media">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="burger-icon-item">
+                            <a class="burger-icon-link" href="">
+                                <svg class="burger-icon-media">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
