@@ -276,13 +276,74 @@ input {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero/people-office-leptop.jpg);
   }
-  @media screen and (min-resolution: 192dpi) {
-    .hero-section {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/hero/people-office-leptop@2x.jpg);
-    }
+}
+@media screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/people-office-leptop@2x.jpg);
+  }
 }
 /* ============= ADVANTAGES ============= */
+.advantage-icon-title {
+  display: none;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+}
+.advantages-list-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.advantages-list-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    column-gap: 24px;
+  }
+  .advantages-list-item {
+    width: calc((100% - 72px) / 2);
+  }
+  .advantages-list-title {
+    text-align: start;
+  }
+  @media screen and (min-width: 1158px) {
+    .advantages-list-item {
+      width: calc((100% - 72px) / 4);
+    }
+    .advantages-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #8e8f99;
+      border-radius: 4px;
+      width: 264px;
+      height: 112px;
+      background-color: #f4f4fd;
+      margin-bottom: 8px;
+    }
+  }
+}
 
 /* ============= MOBILE MENU ============= */
 .burger-menu {
