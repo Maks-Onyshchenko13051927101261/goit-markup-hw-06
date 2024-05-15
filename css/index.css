@@ -198,9 +198,19 @@ input {
   margin-right: auto;
   background-color: #2e2f42;
   padding: 72px 0;
+
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero/people-office-phone.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-position: center;
+  background-size: cover;
 }
-.hero-section {
-  border-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url();
+@media screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/people-office-phone@2x.jpg);
+  }
 }
 .solution-info {
   max-width: 216px;
@@ -239,6 +249,40 @@ input {
 .service-button:focus {
   background-color: #404bbf;
 }
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/people-office-tablet.jpg);
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people-office-tablet@2x.jpg);
+    }
+  }
+  .solution-info {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/people-office-leptop.jpg);
+  }
+  @media screen and (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people-office-leptop@2x.jpg);
+    }
+}
+/* ============= ADVANTAGES ============= */
 
 /* ============= MOBILE MENU ============= */
 .burger-menu {
