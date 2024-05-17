@@ -82,19 +82,18 @@ input {
 .adress-info {
   display: none;
 }
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 2px 1px 0 rgba(46, 47, 66, 0.08);
   background: #ffffff;
-  padding-top: 16px;
-  padding-bottom: 16px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .page-logo {
-  display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -104,7 +103,6 @@ input {
   color: #4d5ae5;
 }
 .accent-lodo {
-  display: block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -117,7 +115,7 @@ input {
   line-height: 0;
   border: none;
   background-color: transparent;
-  padding: 0;
+  padding: 16px 0;
   fill: #2f2f37;
 }
 @media screen and (min-width: 768px) {
@@ -135,6 +133,7 @@ input {
     gap: 40px;
   }
   .menu-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
