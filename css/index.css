@@ -190,6 +190,11 @@ input {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 }
 /* ============= HERO ============= */
 .hero-section {
@@ -353,6 +358,9 @@ input {
   }
 }
 /* ============= OUR TEAM ============= */
+.our-team {
+  background-color: #f4f4fd;
+}
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
@@ -647,7 +655,7 @@ input {
 }
 @media screen and (min-width: 768px) {
   .footer-container {
-    justify-content: center;
+    min-width: 584px;
   }
   .footer-title-text {
     max-width: 264px;
